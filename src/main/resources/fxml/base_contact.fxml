@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="305.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.isel.ncml.phonebook.fxml.controller.BaseContactController">
+   <children>
+      <TextField fx:id="txtName" layoutX="14.0" layoutY="23.0" prefHeight="31.0" prefWidth="411.0" />
+      <ComboBox fx:id="cmbGroup" layoutX="436.0" layoutY="23.0" prefWidth="150.0" />
+      <Button layoutX="436.0" layoutY="257.0" mnemonicParsing="false" onAction="#onSave" text="Save" />
+      <Button layoutX="511.0" layoutY="257.0" mnemonicParsing="false" onAction="#onCancel" text="Cancel" />
+      <TabPane layoutX="14.0" layoutY="79.0" prefHeight="169.0" prefWidth="573.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab closable="false" text="Phone">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Country" />
+                        <Label layoutX="13.0" layoutY="50.0" text="Number" />
+                        <Label layoutX="14.0" layoutY="86.0" text="Type" />
+                        <ComboBox fx:id="cmbType" layoutX="99.0" layoutY="81.0" prefWidth="150.0" />
+                        <TextField fx:id="txtNumber" layoutX="99.0" layoutY="45.0" />
+                        <TextField fx:id="txtCountry" layoutX="99.0" layoutY="9.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab closable="false" text="Email">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Address" />
+                        <Label layoutX="14.0" layoutY="55.0" text="Type" />
+                        <ComboBox fx:id="cmbType2" layoutX="99.0" layoutY="50.0" prefWidth="150.0" />
+                        <TextField fx:id="txtAddress" layoutX="99.0" layoutY="9.0" prefHeight="31.0" prefWidth="296.0" />
+                     </children>
+              </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

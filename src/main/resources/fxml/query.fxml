@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane prefHeight="400.0" prefWidth="674.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.isel.ncml.phonebook.fxml.controller.QueryController">
+   <children>
+      <ChoiceBox fx:id="chItemType" layoutX="14.0" layoutY="14.0" prefWidth="150.0" />
+      <TextField fx:id="txtPropName" layoutX="177.0" layoutY="14.0" promptText="Property Name" />
+      <TextField fx:id="txtPropValue" layoutX="376.0" layoutY="14.0" promptText="Property Regex" />
+      <Button layoutX="570.0" layoutY="14.0" mnemonicParsing="false" onAction="#onApplyFilter" prefHeight="31.0" prefWidth="96.0" text="Apply" />
+      <ListView fx:id="lstResult" layoutX="14.0" layoutY="53.0" prefHeight="335.0" prefWidth="651.0" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="53.0" />
+   </children>
+</AnchorPane>
